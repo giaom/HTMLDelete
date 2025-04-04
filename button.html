@@ -1,0 +1,62 @@
+<!-- 🌐 HTML SECTION: This defines the structure of the page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML + CSS + JS Example</title>
+
+    <!-- 🎨 CSS SECTION: Styling goes inside the <style> tag -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #4a4a4a;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🌐 More HTML: This creates elements seen on the page -->
+    <h1>Click the Button!</h1>
+    <button onclick="showMessage()">Click Me 😊</button>
+    <div id="message"></div>
+
+    <!-- ⚙️ JavaScript SECTION: The logic for interactivity -->
+    <script>
+        function showMessage() {
+            const messageBox = document.getElementById('message');
+            messageBox.textContent = 'You clicked the button! 🎉';
+        }
+    </script>
+
+</body>
+
+</html>
